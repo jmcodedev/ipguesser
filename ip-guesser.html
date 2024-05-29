@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>IP Location</title>
+  </head>
+  <body>
+    <h1 style="display: flex; justify-content: center; margin-top: 30px">
+      IpGuesser by jmCode
+    </h1>
+    <main class="container">
+      <form id="form">
+        <label for="ip">User IP</label>
+        <input
+          type="text"
+          placeholder="IP You want to search"
+          id="ip"
+          requierd
+        />
+        <small>For example: 206.71.50.230</small>
+        <button style="width: 100%" type="submit" id="submit">
+          Search IP information
+        </button>
+      </form>
+      <div>
+        <pre style="margin-top: 25px" id="results"></pre>
+      </div>
+    </main>
+  </body>
+  <script src="src/ipguesser.js"></script>
+</html>
